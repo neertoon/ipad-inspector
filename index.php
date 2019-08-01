@@ -23,7 +23,7 @@
         var isMobileScreen = screen.width <= 768;
         // var isMobileCard = (window.mobilecheck() || is_iPad) && isMobileScreen;
         
-        var nais = '';
+        var napis = '';
         napis += is_iPad+'<br>';
         napis += isMobileScreen+'<br>';
         // napis += isMobileCard+'<br>';
