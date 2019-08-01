@@ -12,8 +12,25 @@
 </head>
 
 <body>
-    <p>
-        To tylko test
-    </p>
+<span id="data">Tu bedzie</span><br>
+<a onclick="show()">Inspektuj</a>
 </body>
+<script>
+    
+    
+    function show() {
+        var is_iPad = navigator.userAgent.match(/iPad/i) != null;
+        var isMobileScreen = screen.width <= 768;
+        // var isMobileCard = (window.mobilecheck() || is_iPad) && isMobileScreen;
+        
+        var nais = '';
+        napis += is_iPad+'<br>';
+        napis += isMobileScreen+'<br>';
+        // napis += isMobileCard+'<br>';
+        napis += navigator.userAgent+'<br>';
+        napis += screen.width+'<br>';
+        
+        $('#data').html(napis);
+    }
+</script>
 </html>
